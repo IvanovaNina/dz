@@ -5,5 +5,9 @@ Console.WriteLine("Введите число, которое вы хотите �
 int A = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine($"Теперь введите степень, в которую вы хотите возвести число {A} : ");
 int B = Convert.ToInt32(Console.ReadLine());
-double C = Math.Pow(A, B);
-Console.WriteLine($"Число {A} в степени {B} равно {C}");
+int result = 1;
+for (int i = 0; i < B; i++)
+{
+    result = result * A;
+}
+Console.WriteLine($"Число {A} в степени {B} равно {result}");
